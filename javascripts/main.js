@@ -2,7 +2,7 @@ console.log('This would be the main JS file.');
 
 function myFunction() {
     var request = new XMLHttpRequest();
-    var path="https://www.runscope.com/signin/oauth/authorize?response_type=code&client_id=585a304b-27f6-4242-94d4-1420afe75bb4&redirect_uri=http://wkloab.github.io/gd_api_testing/&scope=api:read&state=PLACEHOLDER";
+    var path="https://www.runscope.com/signin/oauth/authorize?response_type=code&client_id=585a304b-27f6-4242-94d4-1420afe75bb4&redirect_uri=http://wkloab.github.io/gd_api_testing/call_back.html&scope=api:read&state=PLACEHOLDER";
     document.getElementById("click_me").innerHTML="clicked";
     window.open(path, '_blank', 'toolbar=0,location=0,menubar=0');
     request.onreadystatechange=state_change;
